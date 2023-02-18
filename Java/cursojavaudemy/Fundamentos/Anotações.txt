@@ -1,0 +1,181 @@
+FUNDAMENTOS:
+
+comando de atalho - ctrl + space
+System.out.prinln() - sysout - saida de dados
+metodo main - responsavel por inicia o programa
+
+
+*organização
+
+*desafioorganização
+criar projeto faculdade pacotes e arquivos
+
+*comentario
+//comentario em linha
+/*
+comentario 
+de multiplaslinhas
+*/
+
+/**
+ * Essa classe...
+ * 
+ * @author Rodney
+ * @since JDK1.0
+ */
+
+*variaveis e constantes
+
+int pi = 3.14159
+final int pi = 3.14159
+valor final torna a variavel constante
+
+*desafio variavel e constante
+
+calcula a temperatura
+
+*Inferencia = chama o interpretador de uma viariavel sem precisar declara-la
+
+var a = "coisa"; --> será atribuido tipo como string
+var a; --> não pode ser atribuido de um valor inicializado
+
+*Tipos primitivos
+em java possui 8 tipos primitivos:
+
+TIPOS INTEIROS
+-- byte - 1byte -> -128 até 127
+-- short - 2 -> +-32,767
+-- int - 4 - 
+-- long - 8 -> numeros muito grandes
+
+TIPOS FLUTUANTE
+--float - 4 bytes
+-- double - 8 bytes
+
+TIPO CARACTERE
+--char -> 'D'
+--boolean -> true/false
+
+
+*Notação ponto
+
+aplicação de funções dentro de uma variavel
+String s = "vkdsdkono x";
+s = s.toUpperCase()
+	.replace("X", "minha senhora")
+	.concat("!!!");
+
+o operador ponto não se encontra nos tipos primitivos
+
+**import
+
+
+
+**Tipo String
+
+
+**Objetos vs primitivos
+--em java tudo é feito como objetos exceto os primitivos
+
+**conversão dos tipos primitivos
+--conversão dos tipos como int para float e etc...
+
+converções sem risco
+byte > shot > int > long conv. inplicita
+int > float não tera problema de conversão
+
+
+conversão que possui risco
+long > int > short > byte conv. explicita
+float > int conversão explicita
+
+conceito de cast
+
+forma de forçar a utilização de um tipo primitivo apartir de outro
+não é muito recomendado, pois é utilizado em situações onde é para
+sobrepor as regras de um tipo para outro
+
+desafio conversao
+
+utilizar scanner
+pegar 3 string receber o salario
+
+vai pegar os 3 salarios da pessoa
+calcular media
+
+
+**Operadores
+
+unarios a++, b--
+
+binario 3(+)2
+
+ternário v1 ? v2 : v3
+
+--
+
+aritimeticos
+relacionais
+logicos
+atribuição
+
+
+operadores logicos
+
+tabela verdade
+ 
+AND >> E >> &&
+
+OR >> OU >> ||
+
+XOR >> OU EXCLUSIVO >> ^
+
+só aceita se um dos operadores forem verdadeiro não pode ser os dois operadores
+
+V V --> F
+V F --> V
+F V --> V
+F F --> F
+
+NOT V --> F >> NEGAÇÃO >> !
+
+EX. !TRUE >> FALSE
+   !!TRUE >> TRUE
+
+**Desafio operadores logicos
+
+Trabalho na terça (V ou F)
+Trabalho na quinta (V ou F)
+
+se v v >> comprar tv de 50pol
+se f v ou v f >> comprar tv de 32pol
+se comprar tv de 32 ou 55 >> irá tomar sorvete
+
+se f f >> familia vai ficar em casa
+
+**Operadores Relacionais
+
+== operador de comparação
+
+** operador ternario
+
+-- operador verifica fazendo funcionamentos relacionais dentro de outras variaveis
+double nota = 7.6
+// variavel em estado condicional ? --> operador ternario de condicional
+String resultado = media >= 7.0 ? "aprovado" : "Reprovado";
+
+
+**JRE vs JRK
+
+.java --> .class (bytecode)
+
+JRE -- Java Runtime Envol. -- Utilizado pelo usuario
+JDK -- Java Developer Kit. -- Utilizado pelo desenvolvedor
+
+JVM - Java Virtual Machine -- converte de um sistema operacional para outros apartir de uma JVM para conhecer um bytecode
+
+JRE + (ECLIPSE=COMP.INTERNO(JDK))
+
+**Java vs Javac = java compiler (compilador)
+
+**DesafioModulo

@@ -1,0 +1,125 @@
+**array
+
+>> Array é uma estrutura estatica possui 
+um tamanho fixo.
+
+>> O Array é homogenio: ele só trabalha com dados unicos
+ou seja se definiu como int só irá receber int
+
+>> É uma estrutura "index sada"(index)
+
+>> Array é um Objeto
+ex:
+
+ int[] a = new int[(qtd. posicoes)];
+ >> criação do array do tipo inteiro
+
+++como inserir valor no array
+ 
+[,,,,,,,,]
+ a[2] = 10;
+[,,10,,,,,,]
+ a[0] = 9;
+[2,,10,,,,,,]
+
+a. correto
+a[2]. incorreto
+
+++matriz
+
+[[,,],[,,],[,,]]
+
+double[][] m1 = new double[2][2]
+double[][][] m2 = new double[2][2][2]
+
+**foreach 
+
+forma de percorrer um array sem 
+depender de um numero
+
+for (double d : Notas) {
+System.out.println(d);
+		}
+
+
+**desafio Java
+
+Calcule media de um aluno
+
+
+**matriz
+
+for (String[] bA : bancoAlunos) {
+	System.out.println(Arrays.toString(bA));
+}
+
+**Entendendo Equals e hashcode em Matriz
+
+Produto p1 = new Produto();
+p1.name = "caneta";
+Produto p2 = new Produto();
+p2.name = "caneta";
+
+p1 == p2 >> false
+
+++Equals == metodo disponivel em todos os "objetos".
+Cria um criterio para comparar um Objeto com outro
+vai definir uma comparação entre os objetos
+
+p1.equals(p2); >> false >> endereco de memoria não diferentes
+
+++hascode = util quando você procura por elementos dentro de uma lista ou um array // possivel index do python
+>> hashcode irá retonar um tipo inteiro
+
+hashcode e equals andam em conjunto
+
+**equals na pratica
+
+
+**Collection
+
+fundamentos da collection
+
+Tem tamanhos variaveis
+
+Pode ter dados misturados (String, int, double)
+
+não suporta tipos primitivos
+
+++set // representa um conjunto
+--não ordenado por padrão
+--não indexado
+-- não aceita repetição
+
+++list // representado por uma lista
+-- indexado
+-- aceita repetição
+
+++map //parece um dicionario
+-- chave valor
+-- chave não aceita repetição
+-- valor aceita repetição
+
+++queue // representado por uma pila
+-- first in/first out (fifo) 
+--primeiro a entrar é o primeiro a sair
+
+++stack // representado por uma pilha
+-- o last in // first out (lifo)
+o ultimo a entrar é o ultimo a sair 
+
+**set --> hashset
+-- pode ser heterogeneo // não é recomendavel
+-- pode ser homogenea // é recomendavel
+-- não aceita recepcao
+-- pode ser ordenado
+-- não indexado
+
+**list
+-- pode ser heterogenea
+-- pode ser homogenea
+-- aceita obj. duplados
+-- é ordenada
+-- É indexado // o tchan
+
+

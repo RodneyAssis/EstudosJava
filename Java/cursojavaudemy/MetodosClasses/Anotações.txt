@@ -1,0 +1,86 @@
+Introdução:
+O que é classe objeto?
+qual sua relação?
+o que são metodos?
+
+MUITO IMPORTANTE!!!!
+
+**Revisão sobre Classes
+
+Java só trabalha em classe
+
+a classe com metodo main é a porta de entrada de todos os dados
+
+uma classe define um bloco de codigo**
+
+**Conceitos Classe x Objetos
+(Aplicado em multiplas linguagens);
+
+Objeto tentativa de trazer 
+um objeto para o digital apartir de POO.
+
+Anatomia
+
+começar com 
+"Modificador" class "Nome"...--Varriação{
+	//corpo >> atributos e comportamentos membros da classe
+}
+
+atributos = dados >> (int, boolean, date, string, "produto")
+comportamentos = metodos >> comportamentos(seu funcionamento)
+
+Uma classe define um tipo 1ºFato
+
+Classe representa uma abstração de um 
+objeto do mundo real 2ºFato
+
+classe << estrutura de dados
+classe >> objetos << dados
+
+objeto == instância
+
+classe é como um molde para depois gerar
+diferentes tipos de instância
+
+construtor >> metodo especial responsavel criar objetos
+
+new >> chama o construtor
+
+** membros de uma class
+
+classe
+>>atributos
+>>>>variaveis = valores que oscilão dentro de um atributo vel = x;
+>>>>constante = valores constantes dentro de um atributo velMax = 300;
+>>metodos/construtores 
+>> classes
+
+membros de uma class
+
+atributos
+>>var
+>>>>classes/objetos << static
+>>const
+>>>>classes/objetos << static
+
+metodos
+>>classes/objetos << static
+contrutor
+
+static transforma um objeto a pertencer a classe
+
+acessar os membros
+
+objeto.membro(atributos)
+
+
+Desafio Classe Data
+
+criar classe data e data test
+data dia,mes,ano
+
+**metodos
+
+Construtores
+
+

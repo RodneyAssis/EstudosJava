@@ -1,0 +1,45 @@
+pode se utilizar das estruturas de controle tanto bloco de codigos {} quando ; para estruturas mais simples
+
+**Do-While
+
+do {} while(); faz a sentença antes de realizar a condição de controle
+força o valor da sentença ser utilizada ao menos 1 vez
+
+**DesafioWhile
+
+CalcMedia;
+usuario digitar a nota
+armazena no total de notas
+fazer pelo numero de notas digitadas
+para sair -1
+realizar a media
+
+**MiniDesafioFor#75
+
+realização de um for decrescente
+
+
+**fordeumlaçodentrodeoutro#76
+
+for (int i = 0; i < 10; i++) {
+	for (int j = 0; j < 5; j++) {
+		System.out.printf("[%02d, %02d] ",i+1,j+1);
+	}
+	System.out.println();
+}
+no modo debug ctrl + shift + i você vê se as alternativas está sendo verdadeira ou falsa
+
+
+**switch
+
+Uma estrutura condicional
+não é mais poderoso como o if, mas tem sua funcionalidade para situações especificas
+
+**break
+
+estrutura de controle que interrompe a estrutura do laço
+
+**continue
+
+continue; ele interrompe a proxima interação diferente do break que interrompe o laço 
+

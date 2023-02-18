@@ -1,0 +1,157 @@
+Orientação a objetos
+
+java é focado em POO
+
+
+herança, polimorfismo
+
+**Reuso via composição
+
+Vizando trabalhar em classe e objetos
+ 
+relacionamento de um para muitos
+
+ex.: carro >> portas
+
+relacionamento muito pra muito
+
+ex: 
+
+usuario perfil >><< usuario
+
+paradigmas >> estruturar os pensamentos em codigo
+
+pilares da OO
+
+Precisa ser bem definido
+1 encapsulamento
+   o objeto em parte deve está escondido do mundo exterior
+	ex carro(parte interagivel(direção, pedal))
+	   Motor >> parte escondida
+
+
+
+   
+2 herança
+	principio de reuso de codigo uma relação
+	ex cliente >> compra
+	   Celta >> carro
+	   Filho >> Pai
+3 polimorfismo
+	Capacidade utilizando conceitos genericos coisas especificas
+	Ex Animal << Cachorro
+4 abstração
+	Observar o mundo real e suas complexidades e 
+	simplificar no software
+	ex: medico(Esposa, quantidade dedos) >> coisas desnecessarias.
+
+
+
+###Encapslamento
+
+	Encapsular algo(Objeto);
+	nivel de segurança
+	private private 
+	package --
+	protected >> protected
+	public >> public
+
+###Herança
+	Composição x herança
+
+Composição = mais flexivel que herança
+ex: 
+	um carro (tem um) motor
+	um carro tem portas
+
+Herança
+ex: 
+civic é um carro
+gato é um mamifero
+
+Animal>> Mamifero>> Mamifero terreste
+      >> Anfibios>> sapo
+
+
+superclasse(classe mais generica) possui menos comportamentos
+subclasse(herda todos os comportamentos da classe pai)
+
+
+hierarquia sem herança
+ex.	
+	soldado cabo sargento tenente
+
+herança multipla
+
+Classe1 <-- classe2
+Classe1 <-- classe3 <-- classe5
+Classe1 <-- classe4
+
+extends: quando uma classe herda de outra
+Enum: quantidade definidade de possibilidades data e etc
+
+
+###Polimorfismo - (statico e dinamico)
+
+statico(sobrecarga)
+nomes de metodos que possuem mesmo nomes causando sobrecarga
+Acontece staticamente no mesmo codigo
+
+dinamico**
+prerequisito precisa ter herança
+
+Carro c = new Civic(); 
+c = new Ferrari();
+
+
+Utiliza a mesma variavel para herdar qualquer classe que herdou da classe Carro.
+
+polimorfismo em metodos
+não é possivel utilizar polimorfismo
+void estacionar(Civic c) {
+
+}
+
+void estacionar(Carro(Civic, Ferrari) c) {
+
+
+}
+
+
+###Abstração(simplificação)
+
+pegar o conceito basicos do mundo real e passar para o software
+ex: faculdade
+
+Professor() Disciplina() Sala() Aluno() --> AlunoBolsista()
+
+Mundo real é a referencia
+
+
+Desafio Herança
+
+Carro(velAtual,Acelerar(), Frear()) >> CarroEspecifico1(), CarroEspecifico2(Acelerar3x)
+
+###Herança parte 3
+
+this para chamar o construtor da subclasse
+super é utilizado para chamar o construtor da classe pai
+
+se a classe pai tiver atribulos no metodo construtor
+tbm tera que passar para as subclasse 
+
+desafio herança 2
+
+Carro(final int VELOCIDADE_MAXIMA) 
+´
+
+###Modificação de acesso1 encapsulamento
+
+Niveis de acesso: private, protected, default, public
+
+private: somente os tipos e os metodos podem acessar da classe
+default: somente os membros da classe podem ver
+protected: somente classes de um mesmo pacote podem acessar ou classes de outros pacotes que possuem herança com a classe
+public: todos podem ver
+
+desafio modificadores de acesso
