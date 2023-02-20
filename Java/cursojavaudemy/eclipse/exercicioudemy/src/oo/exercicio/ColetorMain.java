@@ -20,8 +20,7 @@ public class ColetorMain {
 		
 		
 		Homem p1 = new Homem(nomePessoa, alturaPessoa, sexoPessoa);
-		Mulher p2 = null
-				;
+		
 		for (int i = 0; i < 2; i++) {
 			System.out.print("Digite o nome do usuario: ");
 			nomePessoa = input.next();

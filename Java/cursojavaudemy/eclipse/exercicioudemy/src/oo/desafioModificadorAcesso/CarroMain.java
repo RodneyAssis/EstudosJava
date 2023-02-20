@@ -8,23 +8,27 @@ public class CarroMain {
 	 	Ferrari c1 = new Ferrari(280);
 		Chevette c2 = new Chevette(180);
 		
-		for (int i = 0; i < 50; i++) {
-			c1.acelerar();
-		}
-		System.out.println(c1.velAtual);
 		
-		for (int i = 0; i < 15; i++) {
+		c1.ligarTurbo();
+		for (int i = 0; i < 5; i++) {
+			c1.acelerar();
+			System.out.println(c1.velAtual);
+		}
+		
+		for (int i = 0; i < 5; i++) {
 			c1.freiar();
 		}
 		
 		System.out.println(c1.velAtual);
-		
-		for (int j = 0; j < 15; j++) {
+	
+		c2.desligarTurbo();
+		c2.ligarTurbo();
+		for (int j = 0; j < 5; j++) {
 			c2.acelerar();
+			System.out.println(c2.velAtual);
 		}
-		System.out.println(c1.velAtual);
 		
-		for (int j = 0; j < 15; j++) {
+		for (int j = 0; j < 5; j++) {
 			c2.freiar();
 		}
 		

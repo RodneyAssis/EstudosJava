@@ -2,6 +2,7 @@ package oo.heranca.desafio;
 
 public class Carro {
 	public double velAtual;
+	public int aceletacao;
 	
 	protected final int velMax;
 	
@@ -13,7 +14,7 @@ public class Carro {
 		if (velAtual - 5 > velMax) {
 			velAtual = velMax;
 		} else {
-			velAtual += 5;
+			velAtual += aceletacao;
 		}
 	}
 	
@@ -22,7 +23,7 @@ public class Carro {
 		if (velAtual <= 0) {
 			velAtual = 0;
 		} else {
-			velAtual -= 5;
+			velAtual -= (aceletacao-5);
 		}
 	}
 }

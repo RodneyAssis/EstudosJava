@@ -155,3 +155,26 @@ protected: somente classes de um mesmo pacote podem acessar ou classes de outros
 public: todos podem ver
 
 desafio modificadores de acesso
+
+
+### Getters e Setters
+
+###Interface
+
+public interface esportivo
+
+interface possue metodos que não possuem corpo
+
+todo metodo dentro de interface é publico
+implements quando uma classe vai implementar ou receber todos os metodos dentro de outra classe 
+
+### abstract -- metodo que não possue corpo >> {}
+
+classe abstrata não pode ser abstrata
+
+por que criar uma classe abstrata >> implementar por herança
+
+### Interface 2
+
+conceito 
+

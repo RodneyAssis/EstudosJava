@@ -1,0 +1,15 @@
+### Introdução a lambdas --> paradigma funcional
+	**Programação funcional
+
+### Primeira funcao Lambdas
+
+
+## Interface funcional --> @FunctionalInterface
+
+interface funcional só funciona apartir de um unico metodo
+
+obs.: existem caso de que é possivel aplicat metodos default dentro
+
+## Foreach funcional
+
+nomeDaLista.foreach(variavel -> {System.out.println(variaval)}) -- APLICAR NO PROJETO
