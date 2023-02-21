@@ -5,3 +5,9 @@
 String.format("%06d", numero); // retorna 000005 -- %02d adiciona um zero na frente do tipo
 
 no modo debug ctrl + shift + i você vê se as alternativas está sendo verdadeira ou falsa
+
+nome.p.getMarca().substring(0, 1).toUpperCase().concat(nome.p.getMarca().substring(1)) = deixa a primeira letra maiuscula
+
+foreach com aplicação em lambdas
+
+lista.forEeach(variavel -> {System.out.prinln(variavel)})

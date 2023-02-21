@@ -3,10 +3,6 @@ package funcoeslambdas;
 import java.util.function.BinaryOperator;
 
 public class CalculoTeste3ProgFuncional {
-
-	// não é permitido conversão direta
-	// double >> int não pode
-	// double >> Double pode
 	public static void main(String[] args) {
 		BinaryOperator<Double> calc = (x, y) -> x + y;
 
