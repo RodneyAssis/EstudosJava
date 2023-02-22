@@ -18,8 +18,19 @@ public class Foreach {
 		
 		// pra cada X aplicar o sysout que VISÃO!!!!!!
 		System.out.println("Method Reference...");
-		aprovados.forEach(System.out::println);
+		System.out.println(aprovados.forEach(System.out::println));
 		
+		System.out.println("Lambda #2...");
 		//Continuação de ForEach parte 2
+		aprovados.forEach(nome -> imprimir(nome));
+
+	
+		// pra cada X aplicar o sysout que VISÃO!!!!!!
+		System.out.println("Method Reference #2...");
+		aprovados.forEach(Foreach::imprimir);
+	}
+	
+	static void imprimir(String nome) {
+		System.out.println("Nome: " + nome);
 	}
 }
