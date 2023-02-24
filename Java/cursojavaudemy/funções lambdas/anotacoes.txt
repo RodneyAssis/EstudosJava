@@ -22,3 +22,44 @@ variavelClasse.forEach(forEach::imprimir);
 
 static void imprimir(nomeClasse nome){
 }
+
+## Lambda - comsumer (consumidor) Aceita um parametro porem não retorna nada
+
+Não sei!!!!!!!!!!!!! aaaaaaaaaaaaaaaaaaaaaah
+
+## Lambda - Fuction (função) aceita um argumento e produz um resultado
+
+composição de funcao estudar um pouco mais.
+//É atribuido um valor e retorna uma função um possivel resultado
+	Function<Integer, String> parOuImpar = nu -> nu % 2 == 0 ? "par" : "impar";
+
+	Function<String, String> oResultado = valor -> "O resultado é " + valor;
+	
+	Function<String, String> algumaCoisa = valor -> valor + "!!!";
+	
+	var concatFunctions = parOuImpar.andThen(oResultado).andThen(algumaCoisa).apply(2);
+	
+	System.out.println(concatFunctions);
+	
+	// 2 % 2 == 0 = par -> x ;
+	// "O resultado é" + x = o resultado é par -> x
+	// x + "!!!" = "o resultado é par!!!"
+	// Ele recebe as atribuições e resolve e aplica na proxima atribuição.
+
+
+## Lambda - Predicate(Predicado) 
+
+// analisa o resultado, cado seje verdadeiro retornará um valor boolean(true ou
+		// false)
+		
+//Recebe um valor e retorna um valor booleano;
+Predicate<Integer> isPar = num -> num % 2 == 0;
+		
+System.out.println(isPar.test(2)); // True
+
+##Lambda - supply () não recebe parametro e retorna algo
+
+estranho
+
+##Lamda - UnaryOperator() util no encadeamento de entradas de int para int
+
