@@ -13,3 +13,12 @@ obs.: existem caso de que é possivel aplicat metodos default dentro
 ## Foreach funcional
 
 nomeDaLista.foreach(variavel -> {System.out.println(variaval)}) -- APLICAR NO PROJETO
+
+#outroMetodo;
+main{
+
+variavelClasse.forEach(forEach::imprimir);
+}
+
+static void imprimir(nomeClasse nome){
+}

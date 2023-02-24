@@ -18,7 +18,7 @@ public class Foreach {
 		
 		// pra cada X aplicar o sysout que VISÃO!!!!!!
 		System.out.println("Method Reference...");
-		System.out.println(aprovados.forEach(System.out::println));
+		aprovados.forEach(System.out::println);
 		
 		System.out.println("Lambda #2...");
 		//Continuação de ForEach parte 2
