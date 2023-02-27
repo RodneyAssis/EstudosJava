@@ -1,0 +1,18 @@
+Estoque
+	Adicionar Produto
+		ID, Tipo, Nome, Preço, Quantd.
+		(checarEstoque = Tipo e o Nome)
+	Remover Produto
+		Nome -> ID
+		(RemoverLista = Nome)
+	Alterar Produto
+		Nome -> ID = 0001 LenovoIdeaPadGaming
+		       	     0004 LenovoIdeaPad310
+		(AlterarPreco, AlterarQuantidade)
+	Visualizar
+		(VisualizarLista)
+
+	Sair
+
+CadastroFuncionarios
+	
