@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "65825aa1e2b9262dbdb8b72e"
+  },
+  "nome": "Acre",
+  "sigla": "AC",
+  "região": "Norte"
+},
+{
+  "_id": {
+    "$oid": "658263a8e2b9262dbdb8b737"
+  },
+  "nome": "São Paulo",
+  "sigla": "SP",
+  "Cidades": [
+    {
+      "_id": {
+        "$oid": "65826779e2b9262dbdb8b73a"
+      },
+      "nome": "Campinas",
+      "area": 795.7,
+      "prefeitura": "Jonas Donizette",
+      "populacao": 1081000
+    },
+    {
+      "_id": {
+        "$oid": "65826789e2b9262dbdb8b73c"
+      },
+      "nome": "Guarulhos",
+      "populacao": 1325000
+    },
+    {
+      "_id": {
+        "$oid": "65826793e2b9262dbdb8b73e"
+      },
+      "nome": "Sorocaba",
+      "distancia": 87,
+      "populacao": 644919
+    }
+  ],
+  "região": "Sudeste"
+}]
