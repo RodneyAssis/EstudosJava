@@ -15,15 +15,15 @@ public class ClienteDAO {
 
     public ClienteDAO() {
 //        Abrir uma conexão com o banco de dados.
-        Connection conn = StaticConnectionDAO.getconn();
+        this.conn = StaticConnectionDAO.getconn();
     }
 
     public List<Clientes> listar() throws SQLException {
         String sql = "SELECT * FROM clientes";
-
-        List<Clientes> list = new ArrayList<>();
         PreparedStatement stmt = conn.prepareStatement(sql);
+
         var res = stmt.executeQuery();
+        List<Clientes> list = new ArrayList<>();
         while (res.next()){
             Clientes clientes = new Clientes();
 
@@ -37,9 +37,9 @@ public class ClienteDAO {
     }
 
     public boolean inserirCliente(Clientes clientes) throws SQLException{
-        String sql = "INSEERT INFO clientes(id,nome,cpf) value (?, ?, ?)";
+        String sql = "INSERT INTO clientes(id,nome,cpf) VALUES (?, ?, ?)";
         PreparedStatement stmt = conn.prepareStatement(sql);
-        stmt.setString(1, String.valueOf(clientes.getId()));
+        stmt.setObject(1, clientes.getId());
         stmt.setString(2, clientes.getNome());
         stmt.setString(3, clientes.getCpf());
         stmt.execute();
@@ -54,7 +54,7 @@ public class ClienteDAO {
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, clientes.getNome());
             stmt.setString(2, clientes.getCpf());
-            stmt.setString(3, String.valueOf(clientes.getId()));
+            stmt.setObject(3, clientes.getId());
             stmt.execute();
             stmt.close();
             return true;
@@ -67,7 +67,7 @@ public class ClienteDAO {
         String sql = "DELETE FROM clientes WHERE id = ?";
         try {
             PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setString(1, String.valueOf(clientes.getId()));
+            stmt.setObject(1, clientes.getId());
             stmt.execute();
             stmt.close();
             return true;

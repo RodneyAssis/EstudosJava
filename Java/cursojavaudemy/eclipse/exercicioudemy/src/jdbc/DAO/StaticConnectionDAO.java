@@ -11,7 +11,7 @@ public class StaticConnectionDAO {
     //Recolhimento dos Dados fornecidos no properties
     private static Properties getconnProp() throws IOException {
         Properties prop = new Properties();
-        String caminho = "/conexaoTestDAO.properties";
+        String caminho = "./conexaoTestDAO.properties";
         prop.load(StaticConnectionDAO.class.getResourceAsStream(caminho));
         return prop;
     }

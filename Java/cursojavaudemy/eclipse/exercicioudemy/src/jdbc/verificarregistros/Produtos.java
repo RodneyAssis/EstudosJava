@@ -9,6 +9,9 @@ public class Produtos {
     private double preco;
     private int qtd;
 
+    public Produtos() {
+    }
+
     public Produtos(UUID ID, String nome, double preco, int qtd) {
         this.ID = ID;
         this.nome = nome;
